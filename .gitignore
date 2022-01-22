@@ -1,0 +1,7 @@
+.clj-kondo
+.cljs_node_repl
+.cpcache
+.lsp
+.clasp.json
+target
+export

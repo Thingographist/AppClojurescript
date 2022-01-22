@@ -1,0 +1,10 @@
+{:min-bb-version "0.4.0"
+ :tasks          {clone   (let [[id] *command-line-args*]
+                            (println "Clone AppScript project")
+                            (shell (str "clasp clone --rootDir export " id)))
+                  release (do
+                            (println "Compile cljs")
+                            (shell "clojure -M:build")
+                            (shell "sed -e '1d' -e '2i var global = {};' -i export/main.js")
+                            (println "Load app")
+                            (shell "clasp push"))}}

@@ -1,0 +1,7 @@
+{:main             "foo.core"
+ :target           :nodejs
+ :output-to        "export/main.js"
+ :output-dir       "target"
+ :optimizations    :advanced
+ :nodejs-rt        false
+ :infer-externs    true}

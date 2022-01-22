@@ -1,0 +1,4 @@
+{:paths   ["src"]
+ :deps    {org.clojure/clojurescript {:mvn/version "1.11.4"}}
+ :aliases {:build {:main-opts ["-m" "cljs.main" "-co" "build.edn" "-c"]}
+           :repl  {:main-opts ["-m" "cljs.main" "--repl-env" "node"]}}}
